@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+  <button id="btn">按钮</button>
+</body>
+  <script>
+    console.log('1')
+    btn.addEventLinster('click', () => {
+      console.log('anniu被点击')
+    })
+    btn.click()
+    console.log('2')
+    // 结果：1——按钮被点击——2（事件环的工作过程）
+  </script>
+</html>
