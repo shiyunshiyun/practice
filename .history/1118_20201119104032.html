@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <script>
+    // function say() {
+    //   console.log('say')
+    //   alert('hi')
+    // }
+    // function debounce(delay = 2000) {
+    //   console.log('hi')
+    //   if (debounce.timer) clearTimeout(debounce.timer)
+    //   debounce.timer = setTimeout(() => {
+    //     say()
+    //     debounce.timer = false
+    //   }, delay)
+    // }
+    // function throttle(delay = 2000) {
+    //   if (debounce.timer) return
+    //   say()
+    //   debounce.timer = setTimeout(() => {
+    //     debounce.timer = false
+    //   }, delay)
+    // }
+  </script>
+</head>
+<body>
+  <button (click)="say()" [mattooltip]="'hi'">不防抖点击</button>
+  <!-- <button (click)="debounce(3000)">防抖点击</button>
+  <button (click)="debounce(3000)">节流点击</button> -->
+  <!-- <input type="button" placeholder="这是一个按钮" (click)="say()" name="hahah"> -->
+</body>
+
+<!-- <script>
+  function say() {
+    console.log('hi')
+  }
+</script> -->
+</html>
