@@ -151,10 +151,10 @@
 // })
 // app.listen(3000, () => console.log('启动成功'))
 
-// Expires --强缓存 --绝对时间，直接从缓存中取
-// Cache-Control --强缓存 --相对时间(秒)，直接从缓存中取
-// Last-Modified --协商缓存(下次浏览器会自动带上if-modified-since) (304) --服务器response header设置的 (Last-Modified和if-modified-since是成对使用的)
-// Etag --协商缓存(下次浏览器会自动带上IF-None-Match) --类似比较哈希值  --下次请求会带在request header中 (Etag和IF-None-Match是成对使用的)
+// Expires --强缓存 --绝对时间，直接从缓存中取expires
+// Cache-Control --强缓存 --相对时间(秒)，直接从缓存中取cache-control
+// Last-Modified --协商缓存(下次浏览器会自动带上if-modified-since) (304) --服务器response header设置的 (Last-Modified和if-modified-since是成对使用的)last-modified和if-modified-since
+// Etag --协商缓存(下次浏览器会自动带上IF-None-Match) --类似比较哈希值  --下次请求会带在request header中 (Etag和IF-None-Match是成对使用的)etag和if-none-match
 // 参考链接：https://developer.mozilla.org/zh-CN/docs/Web/HTTP/Headers/Expires
 
 // 缓存的资源有的放在内存中(资源较小且请求频繁)，有的放在外存中
