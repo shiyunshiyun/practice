@@ -69,91 +69,75 @@
 // map(el => console.log(el))
 // 结果： 1 2 3
 // 12: 'woof'
-// function Dog(name) {
-//   this.name = name
-//   this.speak = function(){
-//     return 'woof'
-//   }
-// }
-// const dog = new Dog('Pogo')
-// Dog.prototype.speak = function(){
-//   return 'arf'
-// }
-// console.log(dog.speak())
-// // 结果：woof
+function Dog(name) {
+  this.name = name
+  this.speak = function(){
+    return 'woof'
+  }
+}
+const dog = new Dog('Pogo')
+Dog.prototype.speak = function(){
+  return 'arf'
+}
+console.log(dog.speak())
+// 结果：woof
 // 13: [{a: 1}, {a: 1}]
-// const mySet = new Set([{a:1}, {a: 1}])
-// const result = [...mySet]
-// console.log(result)
-// //结果：[ { a: 1 }, { a: 1 } ]
+
 // 14: 1, 3
-// console.log(1)
-// new Promise(function (resolve, reject){
-//   reject(true)
-//   window.setTimeout(function (){
-//     resolve(false)
-//   }, 0)
-// }).then(function(){
-//   console.log(2)
-// }, function(){
-//   console.log(3)
-// })
-// // 结果：1， 3
+      // console.log(1)
+      // new Promise(function (resolve, reject){
+      //   reject(true)
+      //   window.setTimeout(function (){
+      //     resolve(false)
+      //   }, 0)
+      // }).then(function(){
+      //   console.log(2)
+      // }, function(){
+      //   console.log(3)
+      // })
 
 // 15: true,true, false
-// console.log(
-//   arr1.sort() === att1,
-//   arr2.sort() == arr2,
-//   arr1.sort() === arr2.sort()
-// )
-// // 结果：true,true, false(即使数组内容改变了，但是引用地址并没有发生变化)
+
 // xxx16: 2, 1 ???
-// var x = 1
-// function func(x,y = function anonymous(){x=2}){
-//   var x = 3
-//   y()
-//   console.log(x)
-// }
-// func(5)
-// console.log(x) 
-//结果： 3, 1
+      // var x = 1
+      // function func(x,y = function anonymous(){x=2}){
+      //   var x = 3
+      //   y()
+      //   console.log(x)
+      // }
+      // func(5)
+      // console.log(x) // 3, 1
       // 如果函数设置了默认值，就形成了三个作用域
 
 // 17: 0, 1, 2, 3, 4 ???
-// for(var i = 0; i<5;i++) {
-//   setTimeout(function() {console.log(i)}, i*1000)
-// }
-// 结果; 5, 5, 5, 5, 5
+      // for(var i = 0; i<5;i++) {
+      //   setTimeout(function() {console.log(i)}, i*1000)
+      // }
 
 // 18: undefined
-// (function(x) {
-//   return (function(y) {
-//     console.log(x)
-//   })(2)
-// })(1)
-// // 结果：1
+
 // 19:
-// const arr = [
-//   [1,2],
-//   [3,[4,5]],
-//   6
-// ]
-// const newArr = [] // 存放新数组
-// function flat(arr, depth=1){
-//   if(depth <= 0) {
-//     newArr.push(arr)
-//     return
-//   }
-//   arr.forEach(it => {
-//     if(Array.isArray(it)){
-//       depth--
-//       flat(it, depth)
-//     }else {
-//       newArr.push(it)
-//     }
-//   })
-// }
-// console.log(flat(arr, 2))
+      // const arr = [
+      //   [1,2],
+      //   [3,[4,5]],
+      //   6
+      // ]
+      // const newArr = [] // 存放新数组
+      // function flat(arr, depth=1){
+      //   if(depth <= 0) {
+      //     newArr.push(arr)
+      //     return
+      //   }
+      //   arr.forEach(it => {
+      //     if(Array.isArray(it)){
+      //       depth--
+      //       flat(it, depth)
+      //     }else {
+      //       newArr.push(it)
+      //     }
+      //   })
+      // }
+      // console.log(flat(arr, 2))
 
 // 20: 
       // const obj1 = {

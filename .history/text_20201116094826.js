@@ -14,12 +14,3 @@ for (let i = 0; i < len; i++) {
 }
 console.log(arr)
 console.log(arr.size)
-
-
-
-// var str = "Hello World"
-// const tem = str.substr(2,3)
-// const temp = str.substr(2)
-// console.log('str', str) // Hello World
-// console.log('tem', tem) // llo
-// console.log('temp', temp) // llo World

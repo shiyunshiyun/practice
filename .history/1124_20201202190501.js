@@ -108,52 +108,46 @@
 // )
 // // 结果：true,true, false(即使数组内容改变了，但是引用地址并没有发生变化)
 // xxx16: 2, 1 ???
-// var x = 1
-// function func(x,y = function anonymous(){x=2}){
-//   var x = 3
-//   y()
-//   console.log(x)
-// }
-// func(5)
-// console.log(x) 
-//结果： 3, 1
+var x = 1
+function func(x,y = function anonymous(){x=2}){
+  var x = 3
+  y()
+  console.log(x)
+}
+func(5)
+console.log(x) 
+// 3, 1
       // 如果函数设置了默认值，就形成了三个作用域
 
 // 17: 0, 1, 2, 3, 4 ???
-// for(var i = 0; i<5;i++) {
-//   setTimeout(function() {console.log(i)}, i*1000)
-// }
-// 结果; 5, 5, 5, 5, 5
+      // for(var i = 0; i<5;i++) {
+      //   setTimeout(function() {console.log(i)}, i*1000)
+      // }
 
 // 18: undefined
-// (function(x) {
-//   return (function(y) {
-//     console.log(x)
-//   })(2)
-// })(1)
-// // 结果：1
+
 // 19:
-// const arr = [
-//   [1,2],
-//   [3,[4,5]],
-//   6
-// ]
-// const newArr = [] // 存放新数组
-// function flat(arr, depth=1){
-//   if(depth <= 0) {
-//     newArr.push(arr)
-//     return
-//   }
-//   arr.forEach(it => {
-//     if(Array.isArray(it)){
-//       depth--
-//       flat(it, depth)
-//     }else {
-//       newArr.push(it)
-//     }
-//   })
-// }
-// console.log(flat(arr, 2))
+      // const arr = [
+      //   [1,2],
+      //   [3,[4,5]],
+      //   6
+      // ]
+      // const newArr = [] // 存放新数组
+      // function flat(arr, depth=1){
+      //   if(depth <= 0) {
+      //     newArr.push(arr)
+      //     return
+      //   }
+      //   arr.forEach(it => {
+      //     if(Array.isArray(it)){
+      //       depth--
+      //       flat(it, depth)
+      //     }else {
+      //       newArr.push(it)
+      //     }
+      //   })
+      // }
+      // console.log(flat(arr, 2))
 
 // 20: 
       // const obj1 = {

@@ -126,34 +126,29 @@
 // 结果; 5, 5, 5, 5, 5
 
 // 18: undefined
-// (function(x) {
-//   return (function(y) {
-//     console.log(x)
-//   })(2)
-// })(1)
-// // 结果：1
+(function)
 // 19:
-// const arr = [
-//   [1,2],
-//   [3,[4,5]],
-//   6
-// ]
-// const newArr = [] // 存放新数组
-// function flat(arr, depth=1){
-//   if(depth <= 0) {
-//     newArr.push(arr)
-//     return
-//   }
-//   arr.forEach(it => {
-//     if(Array.isArray(it)){
-//       depth--
-//       flat(it, depth)
-//     }else {
-//       newArr.push(it)
-//     }
-//   })
-// }
-// console.log(flat(arr, 2))
+      // const arr = [
+      //   [1,2],
+      //   [3,[4,5]],
+      //   6
+      // ]
+      // const newArr = [] // 存放新数组
+      // function flat(arr, depth=1){
+      //   if(depth <= 0) {
+      //     newArr.push(arr)
+      //     return
+      //   }
+      //   arr.forEach(it => {
+      //     if(Array.isArray(it)){
+      //       depth--
+      //       flat(it, depth)
+      //     }else {
+      //       newArr.push(it)
+      //     }
+      //   })
+      // }
+      // console.log(flat(arr, 2))
 
 // 20: 
       // const obj1 = {
