@@ -1,27 +1,48 @@
 // xxx1: 'HelloWord' 
+// var name = 'World';
+// (function(){
+//   if(typeof name === 'undefined'){
+//     var name = 'Jack'
+//     console.log('Goodbye' + name)
+//   }else {
+//     console.log('Hello' + name)
+//   }
+// })()
+// GoodbyeJack
 
 // 2: [2, 3, 4]
+// console.log([1,2,3].map(x => x + 1))
 
 // 3: [1, [2,3,4,5]]
+// const numbers = (a, ...b) => [a,b];
+// console.log(numbers(1,2,3,4,5))
 
 // 4: {foo: 'bar'}
+// var foo = 'bar'
+// console.log({foo})
+// console.log({[foo]: 'foo'}) //{ bar: 'foo' }
+
 
 // xxx5: {1: undefined, 2: undefined}
-// 5: undefined
 // const f = (x,y) => ({x,y})
-// console.log(f(1,2))
+// console.log(f(1,2)) // { x: 1, y: 2 }
+// const f2 = (x,y) => {x,y}
+// console.log(f2(1,2)) // undefined
 
-// xxx6: {['b']: 'd'} ???
+// xxx6: {['b']: 'd'}  对象的属性并不会是数组，会自动解析的
       // let a = 'b'
       // let c = {
       //   [a]: 'd'
       // }
-      // console.log(c)
+      // console.log(c) // {b: 'd'}
 
 // 7: {a: {b: 'hello'}}
-// Object.assign({}, target, source)
+// var target = {a: {b:'c',d:'e'}}
+// var source = {a:{b:'hello'}}
+// const tem = Object.assign({}, target, source)
 // Object.assign(target, source)
-// Object.assign(...target, ...source)
+// const tem = Object.assign({}, ...target, ...source)
+// console.log(target, tem)
 
 // 8: {a: 3, b: 4}
 
